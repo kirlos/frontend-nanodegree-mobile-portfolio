@@ -23,3 +23,4 @@ Steps required to modify the content of this application are outside the scope o
 2. Reduced number of sliding pizzas from 200 to 30 (line 527)
 3. In function updatePositions, added var scrollTopCache to remove phase calculations
   from CRP ala the source work @https://www.igvita.com/slides/2012/devtools-tips-and-tricks/jank-demo.html
+4. In function changePizzaSizes - replaced multiple DOM queries with a single query to store pizza element info in var randomPizzas, change selector query to getElementsByClassName from querySelectorAll
